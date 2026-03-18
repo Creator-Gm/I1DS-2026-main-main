@@ -66,3 +66,17 @@ nota = 1;
 console.log("voce tirou nota:", nota, "-", prova(nota));
 nota = 6.5;
 console.log("voce tirou nota:", nota, "-", prova(nota));
+/***************************************************************
+ * versao gustavão
+ */
+function prova(nota) {
+  if (nota < 5) {
+    return "reprovado";
+  } else if (nota < 7) {
+    return "recuperação";
+  } else {
+    return "aprovado";
+  }
+}
+console.log(prova(5));
+console.log(prova(7));
