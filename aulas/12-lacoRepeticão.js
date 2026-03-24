@@ -28,7 +28,7 @@ let soma =  0;
 
 console.log(numeros.length)
         // numeros.length => mostra a quantidade de itens do array
-
+//o
 for (let i = 0; i < numeros.length; i++) {
     soma += numeros[i];
 }
