@@ -33,7 +33,7 @@ console.log(matriz2[1][1]);
 console.log(matriz2[2][0]);
 
 let matriz = [
-o
+
 ]
 console.table(matriz);
 for (let linhs = 0; linhs < matriz.length; linhs++)
