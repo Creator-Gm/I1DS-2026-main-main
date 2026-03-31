@@ -507,12 +507,12 @@ for (let linha = 0; linha < matriz.length; linha++) {
 console.log("A quantidade de elementos maiores que são 10:", somaMaior10);
 
 let stringArray = "";
-for (let linha = 0; linha < matriz.length; linha++) {
+
+for (let coluna = 0; coluna < matriz[0].length; coluna++) {
   stringArray += "[";
-  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+  for (let linha = 0; linha < matriz.length; linha++) {
     stringArray += " " + matriz[coluna][linha] + "."
   }
   stringArray += "]\n"
 }
-
 console.log(stringArray);
