@@ -387,13 +387,13 @@ console.log("");
   }
   console.log("o valor da media do array e", soma3 / array.length);
 
-  let soma4 = 0;
+  let soma5 = 0;
   for (let i = 0; i < array.length; i++) {
-    if (array[i] > soma4) {
-      soma4 = array[i];
+    if (array[i] > soma5) {
+      soma5 = array[i];
     }
   }
-  console.log("o maior valor e", soma4);
+  console.log("o maior valor e", soma5);
   let menor2 = Number.MAX_VALUE;
   for (let i = 0; i < array.length; i++) {
     if (array[i] < menor2) {
@@ -417,24 +417,125 @@ console.log("");
   parte 6
   */
 
-let matriz2 = [
+let matriz = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
 
-console.table(matriz2);
-for (let linha = 0; linha < matriz2.length; linha++) {
-  for (let coluna = 0; coluna < matriz2[0].length; coluna++) {
-    matriz2[linha][coluna] *= 1;
+console.table(matriz);
+
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    console.log(
+      "Matriz[" + linha + "," + coluna + "] =",
+      matriz[linha][coluna],
+    );
   }
 }
 
-for (let linha = 0; linha < matriz2.length; linha++) {
-  for (let coluna = 0; coluna < matriz2[0].length; coluna++) {
-    if (linha == coluna) console.log("Elemento da diagonal:", matriz2[linha][coluna])
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    if (linha == coluna) {
+      console.log(
+        "Elemento que faz parte da diagonal principal da matriz:",
+        matriz[linha][coluna],
+      );
+    }
   }
 }
-for (let linha = 0; linha < matriz2.length; linha++) {
-  for (let coluna = 0; coluna < matriz2[0].length; coluna++) {
-    if (linha == coluna) 
+
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    if (
+      (linha == 0 && coluna == 2) ||
+      (linha == 1 && coluna == 1) ||
+      (linha == 2 && coluna == 0)
+    ) {
+      console.log(
+        "Elemento que faz parte da diagonal secundária da matriz:",
+        matriz[linha][coluna],
+      );
+    }
+  }
+}
+
+let soma4 = 0;
+
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    soma4 += matriz[linha][coluna];
+  }
+}
+console.log("A soma de todos os elementos da matriz é:", soma4);
+
+let maiorNumero2 = 0;
+
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    if (matriz[linha][coluna] > maiorNumero2) {
+      maiorNumero2 = matriz[linha][coluna];
+    }
+  }
+}
+
+console.log("O maior número da matriz é", maiorNumero2);
+
+console.log("Matriz não multiplicada:");
+console.table(matriz);
+
+let numeroX = 3;
+
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    matriz[linha][coluna] *= numeroX;
+  }
+}
+
+console.log("Matriz multiplicada:");
+console.table(matriz);
+
+let somaMaior10 = 0;
+
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    if (matriz[linha][coluna] > 10) {
+      somaMaior10++;
+    }
+  }
+}
+console.log("A quantidade de elementos maiores que são 10:", somaMaior10);
+
+let stringArray = "";
+for (let linha = 0; linha < matriz.length; linha++) {
+  for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+    if (linha == 0) {
+      if (coluna == 0) {
+        stringArray += "[" + matriz[linha][coluna];
+      } else if (coluna == 2) {
+        stringArray += "," + matriz[linha][coluna] + "]";
+      } else {
+        stringArray += "," + matriz[linha][coluna];
+      }
+    }
+    if (linha == 1) {
+      if (coluna == 0) {
+        stringArray += "\n[" + matriz[linha][coluna];
+      } else if (coluna == 2) {
+        stringArray += "," + matriz[linha][coluna] + "]";
+      } else {
+        stringArray += "," + matriz[linha][coluna];
+      }
+    }
+    if (linha == 2) {
+      if (coluna == 0) {
+        stringArray += "\n[" + matriz[linha][coluna];
+      } else if (coluna == 2) {
+        stringArray += "," + matriz[linha][coluna] + "]";
+      } else {
+        stringArray += "," + matriz[linha][coluna];
+      }
+    }
+  }
+}
+console.log(stringArray);
