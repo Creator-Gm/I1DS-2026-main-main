@@ -40,6 +40,3 @@ for (let linhs = 0; linhs < matriz.length; linhs++)
     for (let coluna = 0; coluna < matriz[0].length; coluna++)
 console.log("matriz[",linha); 
         
-    }
-    
-}
