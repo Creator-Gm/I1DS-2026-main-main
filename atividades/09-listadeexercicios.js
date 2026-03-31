@@ -508,34 +508,11 @@ console.log("A quantidade de elementos maiores que são 10:", somaMaior10);
 
 let stringArray = "";
 for (let linha = 0; linha < matriz.length; linha++) {
+  stringArray += "[";
   for (let coluna = 0; coluna < matriz[0].length; coluna++) {
-    if (linha == 0) {
-      if (coluna == 0) {
-        stringArray += "[" + matriz[linha][coluna];
-      } else if (coluna == 2) {
-        stringArray += "," + matriz[linha][coluna] + "]";
-      } else {
-        stringArray += "," + matriz[linha][coluna];
-      }
-    }
-    if (linha == 1) {
-      if (coluna == 0) {
-        stringArray += "\n[" + matriz[linha][coluna];
-      } else if (coluna == 2) {
-        stringArray += "," + matriz[linha][coluna] + "]";
-      } else {
-        stringArray += "," + matriz[linha][coluna];
-      }
-    }
-    if (linha == 2) {
-      if (coluna == 0) {
-        stringArray += "\n[" + matriz[linha][coluna];
-      } else if (coluna == 2) {
-        stringArray += "," + matriz[linha][coluna] + "]";
-      } else {
-        stringArray += "," + matriz[linha][coluna];
-      }
-    }
+    stringArray += " " + matriz[coluna][linha] + "."
   }
+  stringArray += "]\n"
 }
+
 console.log(stringArray);
