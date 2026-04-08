@@ -1,0 +1,15 @@
+/* comentario em css 
+seletores css 
+seletores de classes ->. 
+seletor de id = #
+seletor de elemento= tag html
+
+.*/
+body{background-color: wheat;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 16px; /*tamanho de fonte*/
+margin: 0px; /*espaçamento externo do box*/
+padding: 0px;/*espaçamento interno do box*/
+text-align: center;
+}
+

@@ -10,7 +10,6 @@ console.table(matriz);
 //obetendo elementos com base e seus indices
 console.log(matriz[0][1]);
 
-
 //exercicio
 
 
@@ -32,11 +31,11 @@ console.log(matriz2[0][2]);
 console.log(matriz2[1][1]);
 console.log(matriz2[2][0]);
 
-let matriz = [
+let matriz3 = [
 
 ]
-console.table(matriz);
-for (let linhs = 0; linhs < matriz.length; linhs++)
-    for (let coluna = 0; coluna < matriz[0].length; coluna++)
+console.table(matriz3);
+for (let linhs = 0; linhs < matriz3.length; linhs++)
+    for (let coluna = 0; coluna < matriz3[0].length; coluna++)
 console.log("matriz[",linha); 
         
