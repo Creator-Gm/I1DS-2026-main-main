@@ -1,5 +1,6 @@
 let n = 0
-
+let inmail = []
+let innome = []
 const remove = (id) => {
     let lista = document.getElementById("lista")
     let elemento = document.getElementById(id)
@@ -10,7 +11,17 @@ const remove = (id) => {
 }
 
 const edit = (id) => {
-    
+        let lista = document.getElementById("lista")
+    let elemento = document.getElementById(id)
+    lista.removeChild(elemento)
+
+    let contagem = lista.childElementCount
+    document.getElementById("contagem").innerText = contagem
+    let nome = document.getElementById("nome");
+    let email = document.getElementById("email");
+
+    nome.value = innome[id-1]
+    email.value = inmail[id-1]
 }
 
 const cadastrar = (event) => {
@@ -31,6 +42,10 @@ const cadastrar = (event) => {
     let id = n
     novoItem.innerHTML = id + " - " + nome + " - " + email + '<button onclick="remove('+ id +')" class="removeButton">Remover</button>' + '<button onclick="edit('+ id +')" class="editButton">Editar</button>';
     novoItem.id = id
+    
+    innome.push(nome)
+    inmail.push(email)
+
 
     lista.appendChild(novoItem);
     document.getElementById("nome").value = "";
