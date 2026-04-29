@@ -8,6 +8,7 @@ const remove = (id) => {
 
     let contagem = lista.childElementCount
     document.getElementById("contagem").innerText = contagem
+    itens.foreach 
 }
 
 const edit = (id) => {
@@ -46,11 +47,11 @@ const cadastrar = (event) => {
     innome.push(nome)
     inmail.push(email)
 
-
     lista.appendChild(novoItem);
-    document.getElementById("nome").value = "";
-    document.getElementById("email").value = "";
 
+    document.getElementById(lista[0][1]).value = "";
     let contagem = lista.childElementCount
     document.getElementById("contagem").innerText = contagem
 }
+
+console.log(lista[0][1]);
