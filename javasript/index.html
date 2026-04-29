@@ -1,41 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javacript | Html dinamico</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    
-
-<h1>Html dinamico com javscript</h1>
-<div class="card">
-    <h2>exercicio 01</h2>
-    <h3>contador simples</h3>
-    <p>
-        <span>objetivo</span>
-        criar um contador com botao +1 e tira 1 e reset
-    </p>
-<div id="ex01">
-    <h3>contador</h3>
-<p id="contador">0</p>
-<div class="grupo-bottoes"></div>
-<button id="btn-mais"  onclick="aumentar()">+1</button>
-<button id="bmenos" onclick="diminuir()">-1</button>
-<button id="bzerar" onclick="zerar()">zera</button>
-</div>
 
 
-</div>
+    <h1>Html dinamico com javscript</h1>
+    <div class="card">
+        <h2>exercicio 01</h2>
+        <h3>contador simples</h3>
+        <p>
+            <span>objetivo</span>
+            criar um contador com botao +1 e tira 1 e reset
+        </p>
+        <div class="exerc">
+            <h3>contador</h3>
+            <p id="contador">0</p>
+            <div class="grupo-bottoes"></div>
+            <button id="btn-mais" onclick="aumentar()">+1</button>
+            <button id="bmenos" onclick="diminuir()">-1</button>
+            <button id="bzerar" onclick="zerar()">zera</button>
+        </div>
+
+
+    </div>
+
+    <div class="card">
+        <h2>exercicio 02</h2>
+        <h3>Seletor De Cores</h3>
+
+        <div class="exerc">
+            <h3>Seletor De Cores</h3>
+            <p>
+                <span>
+                    Objetivo:
+                </span>
+                selecionar uma cor no color piker e aplicála a um quadro
+            </p>
+
+            <label>Escolha uma cor</label>
+            <input type="color" id="colorpi" placeholder="Selecione uma cor...." oninput="mudarcor()" />
+            <div id="quadro"></div>
+        </div>
+
+
+    </div>
+
+    <div class="card">
+      <h2>Exercício 03</h2>
+      <h3>Calculadora Simples</h3>
+      <p>
+        <span>Objetivo:</span>
+        Criar uma calculadora que realize as operações de soma,
+        subtração,multiplicação e divisão.
+      </p>
+      <div class="exercicio">
+        <h3>Calculadora Operações Básicas</h3>
+        <input type="number" id="num1" placeholder="Número 1" />
+        <input type="number" id="num2" placeholder="Número 2" />
+        <div class="grupo-botoes">
+          <button id="btn-soma" onclick="somar()">+</button>
+          <button id="btn-subtracao" onclick="subtrair()">-</button>
+          <button id="btn-multiplicacao" onclick="multiplicar()">x</button>
+          <button id="btn-divisao" onclick="dividir()">/</button>
+        </div>
+        <p id="resultado"></p>
+      </div>
+    </div>
 
 
 
-
-
-
-
-    
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

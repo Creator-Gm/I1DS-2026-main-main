@@ -22,7 +22,7 @@ h3 {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-#ex01 {
+.exerc {
   background-color: #ccc;
   width: 500px;
   margin: 8px auto;
@@ -57,4 +57,32 @@ button {
 }
 #bzerar {
   background-color: purple;
+}
+/*exercicio 02*/
+#quadro{
+width: 250px;
+height: 250px;
+border: 2px solid #040908;
+border-radius: 4px;
+margin: 12px auto;
+background-color: white;
+
+
+}
+
+
+#num1, #num2{
+padding: 10px;
+width: 170px;
+margin: 4px;
+margin-bottom: 12px;
+}
+#btn-multiplicacao, #btn-soma, #btn-subtracao,#btn-divisao{
+background-color: coral;
+font-weight: bolder;
+}
+#resultado {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 12px auto;
 }
