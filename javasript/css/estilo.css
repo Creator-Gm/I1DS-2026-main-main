@@ -5,3 +5,56 @@
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+  background-color: #f4f6f9;
+  padding: 24px;
+  text-align: center;
+}
+h1, h2, h3{
+color: #040908;
+padding: 8px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#ex01 {
+ background-color:  #ccc;
+  width: 500px;
+margin: 8px auto;
+padding: 20px;
+margin: 20px;
+}
+#contador{
+font-size: 56px;
+font-weight: bold;
+margin-bottom: 8px;
+}
+.grupo-bottoes{ display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+button{
+width: 80px;
+background-color: red;
+color: white;
+border-radius: 6px;
+cursor: pointer;
+transition: 0.3s;
+border: none;
+font-size: 24px;
+}
+#btn-mais{
+background-color: green;
+}
+#bmenos{
+background-color: brown;
+
+}
+#bzerar{
+background-color: purple;
+
+
+}
