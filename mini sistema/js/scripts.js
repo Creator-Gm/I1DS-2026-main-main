@@ -118,3 +118,4 @@ const aplicarDesconto = () => {
   }
   document.getElementById("valorLiquido").innerText = valorFinal.toFixed(2);
 };
+
