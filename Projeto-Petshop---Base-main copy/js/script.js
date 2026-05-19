@@ -25,3 +25,8 @@ botaoMenu.addEventListener("click", () => {
 });
 
 // ****************************************** //
+const alternarTema = () =>{
+   let elemento = document.body;
+   elemento.classList.toggle("dark");
+}
+document.getElementById("swithdl").onclick = alternarTema;

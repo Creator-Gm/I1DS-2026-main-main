@@ -1,11 +1,21 @@
 :root {
-  --primaria: #878787;
+  --primaria: #7d7d7d;
   --secundaria: #c83932;
-  --escuro: #608a88;
+  --escuro: #343636;
   --claro: #ffffff;
   --texto: #59759c;
   --sombra: 0 8px 30px rgba(0, 0, 0, 0.2);
   --radius: 20px;
+}
+.dark{
+  --primaria: #7d7d7d;
+  --secundaria: #c83932;
+  --escuro: #343636;
+  --claro: #ffffff;
+  --texto: #59759c;
+  --sombra: 0 8px 30px rgba(0, 0, 0, 0.2);
+  --radius: 20px;
+
 }
 
 * {
@@ -311,7 +321,7 @@ iframe {
   color: var(--escuro);
 }
 a {
-color: var(--primaria);
+color: green;
 }
 .sobre{
 
@@ -331,4 +341,29 @@ text-decoration: none;
 
 color: var(--texto);
 
+}
+body.dark {
+  --primaria: #7d7d7d;
+  --secundaria: #000000;
+  --escuro: #7e7e7e;
+  --claro: #ffffff;
+  --texto: #e2e8f0;
+  --sombra: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --radius: 20px;
+  --bg-painel: rgba(0, 0, 0, 0.85);
+  --bg-header: rgba(40, 55, 55, 0.85);
+   background:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(118, 118, 118, 0.91)),
+    url("../img/fundo.png");
+}
+button2.dark {
+  padding: 18px;
+  background: blue;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
 }
