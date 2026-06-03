@@ -1,0 +1,68 @@
+{
+margin: 0;
+padding:0;
+box-sizing:border-box
+}
+body{
+font-size: 18px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 100dvh;
+width: 100%;
+
+}
+header{
+background-color: #1e90ff;
+color: #ffffff;
+padding: 24px;
+text-align: center;
+font-size: 24px;
+}
+nav{
+background-color: #333;
+display: flex;
+justify-content: center;
+gap: 24px;
+padding: 12px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover{color: #1e90ff;
+font-style: italic;
+cursor: ;
+}
+/*layout principal //leiaute*/
+main{
+display: flex;
+gap: 24px;
+padding: 16px;
+}
+aside{
+width: 25%;
+background-color: rgba(19, 31, 43, 0.815);
+padding: 16px;
+border radius: 8px;
+}
+section{
+background-color: white;
+padding: 16px;
+border-radius: 8px;
+}
+/*rodape*/
+footer{
+background-color: #222;
+color: white;
+text-align: center;
+padding: 12px;
+position: fixed;
+bottom: 0;
+width: 100%;
+]
+
+
+}

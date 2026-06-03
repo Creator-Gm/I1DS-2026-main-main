@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --vinho:#5a0000;
+    --vinho2:#780000;
+    --amarelo:#ffb300;
+    --creme:#fff4e8;
+}
+
+body{
+    background:var(--creme);
+}
+
+/* NAVBAR */
+
+nav{
+    background:var(--vinho);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-pedir{
+    background:var(--amarelo);
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    linear-gradient(
+    to right,
+    #5a0000,
+    #220000
+    );
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:60px 8%;
+}
+
+.hero-text{
+    width:45%;
+}
+
+.hero-text h1{
+    font-size:65px;
+    color:white;
+    line-height:1.1;
+}
+
+.hero-text span{
+    color:var(--amarelo);
+}
+
+.hero-text p{
+    color:white;
+    margin-top:20px;
+    font-size:18px;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:15px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:var(--amarelo);
+    border:none;
+}
+
+.btn-secondary{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+}
+
+.hero-info{
+    margin-top:30px;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+
+    color:white;
+    font-size:14px;
+}
+
+.hero-image img{
+    width:700px;
+    max-width:100%;
+}
+
+/* CARDAPIO */
+
+.cardapio{
+    padding:60px 8%;
+}
+
+.section-title{
+    margin-bottom:30px;
+}
+
+.section-title small{
+    color:#d62a2a;
+    font-size:18px;
+}
+
+.section-title h2{
+    font-size:42px;
+}
+
+.produtos-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.produto{
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.15);
+}
+
+.produto img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.produto-info{
+    padding:15px;
+}
+
+.produto-info h3{
+    margin-bottom:10px;
+}
+
+.produto-info p{
+    color:#666;
+    font-size:14px;
+}
+
+.produto-footer{
+    margin-top:15px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.produto-footer button{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:red;
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+}
+
+/* COMBOS */
+
+.combos{
+    background:var(--vinho);
+
+    padding:40px 8%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.combo{
+    background:var(--vinho2);
+
+    color:white;
+
+    border-radius:15px;
+
+    padding:20px;
+}
+
+.combo img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.combo span{
+    color:var(--amarelo);
+    font-weight:bold;
+}
+
+.delivery-box{
+    background:var(--amarelo);
+
+    border-radius:15px;
+
+    padding:20px;
+}
+
+.delivery-box h2{
+    font-size:40px;
+}
+
+.delivery-box button{
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+}
+
+.delivery-box img{
+    width:180px;
+
+    display:block;
+
+    margin:20px auto 0;
+}
+
+/* BENEFICIOS */
+
+.beneficios{
+    padding:60px 8%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+    text-align:center;
+}
+
+.beneficio{
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.1);
+}
+
+.beneficio h3{
+    margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--vinho);
+
+    color:white;
+
+    padding:40px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1000px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-info{
+    justify-content:center;
+}
+
+.hero-image{
+    margin-top:40px;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+}
