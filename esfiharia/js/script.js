@@ -4,10 +4,11 @@ document.getElementById("btnCarne").onclick = adicionarCarne;
 document.getElementById("btnQueijo").onclick = adicionarQueijo;
 document.getElementById("btnCalabresa").onclick = adicionarCalabresa;
 document.getElementById("btnFrango").onclick = adicionarFrango;
+document.getElementById("btnChocolate").onclick = adicionarChocolate;
 
 function abrirCardapio() {
 
-    document.getElementById("cardapio").scrollIntoView();
+    window.location.href = "cardapio.html";
 
 }
 
@@ -32,5 +33,11 @@ function adicionarCalabresa() {
 function adicionarFrango() {
 
     alert("Esfiha de Frango adicionada ao carrinho!");
+
+}
+
+function adicionarChocolate() {
+
+    alert("Esfiha de Chocolate adicionada ao carrinho!");
 
 }
