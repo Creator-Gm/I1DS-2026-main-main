@@ -8,7 +8,7 @@ document.getElementById("btnChocolate").onclick = adicionarChocolate;
 
 function abrirCardapio() {
 
-    window.location.href = "cardapio.html";
+    window.location.href = "cardapio2.html";
 
 }
 
@@ -41,3 +41,6 @@ function adicionarChocolate() {
     alert("Esfiha de Chocolate adicionada ao carrinho!");
 
 }
+btnpedido.addEventListener("click", () => {
+    window.location.href = "pedidos.html";
+});
