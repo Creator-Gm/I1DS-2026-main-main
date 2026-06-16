@@ -2,29 +2,34 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>Peça a Melhor Esfiha</title>
   <link rel="stylesheet" href="css/style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="app">
+  <div class="base">
+    <!-- HEADER -->
     <div class="header">
       <div class="header-left">
         <h1>peça a melhor<br>esfiha</h1>
       </div>
       <div class="header-right">
-        <button class="btn-voltar" id="btnVoltar" >Voltar</button>
-        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&q=80" alt="Esfihas" />
+        <button class="btn-voltar" id="btnVoltar">Voltar</button>
       </div>
     </div>
 
+    <!-- HERO IMAGE -->
+    <img class="hero-image" src="" alt="Esfihas deliciosas" />
+
+    <!-- TABS -->
     <div class="tabs">
       <button class="tab active">salgadas</button>
       <button class="tab">doces</button>
     </div>
 
+    <!-- SALGADAS -->
     <p class="section-label">salgadas e sabores imperdiveis</p>
-
     <div class="salgadas-row">
       <div class="salgadas-label">salgadas e<br>sabores<br>imperdiveis</div>
       <div class="item-card"></div>
@@ -34,24 +39,25 @@
       <div class="item-card light"></div>
     </div>
 
-    <p class="section-label">doces e sabores imperdiveis</p>
-
+    <!-- DOCES -->
     <div class="doces-row">
+      <div class="doces-label">doces e<br>sabores<br>imperdiveis</div>
       <div class="doce-card"></div>
       <div class="doce-card"></div>
       <div class="doce-card"></div>
       <div class="doce-card"></div>
       <div class="doce-card"></div>
     </div>
-
+    <!-- COMBOS -->
     <div class="combos-section">
       <div class="combos-title-wrap">
-        <span class="combos-title">combos</span>
+     
       </div>
       <div class="combos-grid">
-        <div class="combo-card"></div>
-        <div class="combo-card tall"></div>
+        <div class="redblock"> <span class="combos-title">combos</span><div class="combo-card tall"></div>   </div>
+     
         <div class="combo-card highlight"></div>
+        <div class="combo-card"></div>
       </div>
     </div>
   </div>
